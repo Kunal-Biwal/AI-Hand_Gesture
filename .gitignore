@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Downloaded MediaPipe model (auto-downloaded on first run, ~8 MB binary,
+# should not be committed -- see src/hand_tracker.py)
+models/*.task
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env / secrets (no API keys are used by this project, but keep this
+# ignored as a safety habit)
+.env

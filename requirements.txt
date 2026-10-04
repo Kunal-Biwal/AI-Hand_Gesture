@@ -1,0 +1,18 @@
+# AI Hand Gesture Controlled PC -- runtime dependencies
+#
+# Tested with Python 3.12.0 on Windows 11.
+# Versions below are the ones this project was built and tested against
+# (see `pip list` inside venv). Minimum-version pins are used instead of
+# exact pins so small patch upgrades are not blocked.
+
+opencv-python>=4.9.0
+mediapipe>=1.0.1
+numpy>=1.26.0
+PyAutoGUI>=0.9.54
+
+# Optional, NOT required to run the project:
+# If you additionally install `pycaw` and `comtypes`, volume_controller.py
+# will automatically read/display the REAL Windows system volume instead
+# of its built-in estimate. See src/volume_controller.py for details.
+#   pycaw>=20230407
+#   comtypes>=1.2.0
